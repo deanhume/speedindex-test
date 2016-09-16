@@ -5,16 +5,32 @@
     <title>title</title>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <style>
+        html{
+          background-color: #4a7aea;
+        }
         h1 {
           font-family: 'Kaushan Script', cursive;
+          font-size: 150px;
+          color: white;
+          text-align: center;
+          margin-top: 25%;
+        }
+
+        .mainText{
+          font-family: 'Kaushan Script', cursive;
+          font-size: 150px;
+          color: white;
+          text-align: center;
+          margin-top: -120px;
         }
     </style>
   </head>
   <body>
     <h1>Speed Index</h1>
+    <div class="mainText" id="speedIndexResult"></div>
     <script src="rum-speedindex.js"></script>
     <script>
-
+      document.getElementById('speedIndexResult').innerHTML = Math.round(RUMSpeedIndex());
     </script>
   </body>
 </html>
