@@ -256,17 +256,17 @@ var RUMSpeedIndex = function(win) {
     CalculateSpeedIndex();
   } catch(e) {
   }
-  /* Debug output for testing*/
-  var dbg = '';
-  dbg += "Paint Rects\n";
-  for (var i = 0; i < rects.length; i++)
-    dbg += '(' + rects[i].area + ') ' + rects[i].tm + ' - ' + rects[i].url + "\n";
-  dbg += "Visual Progress\n";
-  for (var i = 0; i < progress.length; i++)
-    dbg += '(' + progress[i].area + ') ' + progress[i].tm + ' - ' + progress[i].progress + "\n";
-  dbg += 'First Paint: ' + firstPaint + "\n";
-  dbg += 'Speed Index: ' + SpeedIndex + "\n";
-  console.log(dbg);
+  // /* Debug output for testing*/
+  // var dbg = '';
+  // dbg += "Paint Rects\n";
+  // for (var i = 0; i < rects.length; i++)
+  //   dbg += '(' + rects[i].area + ') ' + rects[i].tm + ' - ' + rects[i].url + "\n";
+  // dbg += "Visual Progress\n";
+  // for (var i = 0; i < progress.length; i++)
+  //   dbg += '(' + progress[i].area + ') ' + progress[i].tm + ' - ' + progress[i].progress + "\n";
+  // dbg += 'First Paint: ' + firstPaint + "\n";
+  // dbg += 'Speed Index: ' + SpeedIndex + "\n";
+  // console.log(dbg);
 
   return SpeedIndex;
 };
