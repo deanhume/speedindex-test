@@ -52,8 +52,10 @@
         timingValue: speedIndexResult
       });
 
-        // Track the Site Speed
-        ga('create', 'UA-84298674-1', {'siteSpeedSampleRate': 40});
+      ga('send', 'event', 'RUM', 'Speed Index RUM', 'Speed Index', speedIndexResult);
+
+      // Track the Site Speed
+      ga('create', 'UA-84298674-1', {'siteSpeedSampleRate': 40});
     </script>
 
 
