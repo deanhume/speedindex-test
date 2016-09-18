@@ -45,10 +45,12 @@
       ga('send', 'pageview');
 
       // Push the speed index results to GA
-      _gaq.push(['_trackEvent',
-           'SpeedIndex-RUM',
-           speedIndexResult
-        ]);
+      ga('send', {
+        hitType: 'timing',
+        timingCategory: 'Speed Index RUM',
+        timingVar: 'speedindex',
+        timingValue: speedIndexResult
+      });
 
         // Track the Site Speed
         ga('create', 'UA-84298674-1', {'siteSpeedSampleRate': 40});
